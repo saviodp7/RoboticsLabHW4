@@ -39,14 +39,14 @@
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rl_fra2mo_description)/conf/fra2mo_conf_map.rviz" required="true" />
 
   <!--Static tf publisher for goals-->
-  <node pkg="tf" type="static_transform_publisher" name="goal_1_pub" args="-10   3 0 0 0 0      1 map goal1 100" />
-  <node pkg="tf" type="static_transform_publisher" name="goal_2_pub" args="-15   7 0 0 0 0.5235 1 map goal2 100" />
-  <node pkg="tf" type="static_transform_publisher" name="goal_3_pub" args="-6    8 0 0 0 3.1415 1 map goal3 100" />
-  <node pkg="tf" type="static_transform_publisher" name="goal_4_pub" args="-17.5 3 0 0 0 1.3090 1 map goal4 100" />
-  <node pkg="tf" type="static_transform_publisher" name="aruco_prox" args="-15   9 0 0 0 3.9268 1 map aruco_prox 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_1_pub" args="-10   3 0 0      0 0 map goal1 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_2_pub" args="-15   7 0 0.5235 0 0 map goal2 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_3_pub" args="-6    8 0 3.1415 0 0 map goal3 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_4_pub" args="-17.5 3 0 1.3090 0 0 map goal4 100" />
+  <node pkg="tf" type="static_transform_publisher" name="aruco_prox" args="-15   9 0 3.9268 0 0 map aruco_prox 100" />
   <!-- Goals for exploration -->
-  <node pkg="tf" type="static_transform_publisher" name="goal_5_pub" args="-0.5  0.4 0 0 0 1.57 1 map goal5 100" />
-  <node pkg="tf" type="static_transform_publisher" name="goal_6_pub" args="-16.5 9.4 0 0 0 0 1 map goal6 100" />
-  <node pkg="tf" type="static_transform_publisher" name="goal_7_pub" args="-0.7  9.5 0 0 0 0 1 map goal7 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_5_pub" args="-0.5  0.4 0 1.57 0 0 map goal5 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_6_pub" args="-16.5 9.4 0 0    0 0 map goal6 100" />
+  <node pkg="tf" type="static_transform_publisher" name="goal_7_pub" args="-0.7  9.5 0 0    0 0 map goal7 100" />
 
 </launch>
